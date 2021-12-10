@@ -1,0 +1,20 @@
+<form>
+    <div class="container">
+      <div class="banner">
+        <img src="../../assets/logo.png" alt="logo">
+      </div>
+      <div class="content">
+        <h1>Crie sua conta</h1>
+        <input type="text" placeholder="Email" name="email" #username [(ngModel)]="account.email">
+        <input type="text" placeholder="Username" name="username" #username [(ngModel)]="account.name">
+        <input type="password" placeholder="Senha" name="password" [(ngModel)]="account.password">
+        <input type="password" placeholder="Confirme a Senha" name="passwordConfirmation" [(ngModel)]="account.passwordConfirmation">
+        <button (click)="cadastrarUsuario()">Criar</button>
+        <button type="reset" onclick="location.href='http://localhost:4200/'">
+            Voltar
+        </button>
+      </div>
+  
+    </div>
+  </form>
+  
